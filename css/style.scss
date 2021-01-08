@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+// Primary - Text
+$dark-blue: hsl(238, 29%, 16%);
+$soft-red: hsl(14, 88%, 65%);
+// Background gradient
+$soft-violet: hsl(273, 75%, 66%);
+$soft-blue: hsl(240, 73%, 65%);
+// Neutral - Text
+$very-dark-grayish-blue: hsl(237, 12%, 33%);
+$dark-grayish-blue: hsl(240, 6%, 50%);
+// Dividers
+$light-grayish-blue: hsl(240, 5%, 91%);
+$font-size: 14px;
+$font-family: "Kumbh Sans";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: 400;
+  background: linear-gradient($soft-violet, $soft-blue);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 15px;
+  width: 90%;
+}
+
+.faq-container {
+  padding: 6rem 1.5rem 1rem;
+  margin: 4rem 0 2rem;
+
+  h1 {
+    margin-bottom: 1.5rem;
+    color: $dark-blue;
+    text-align: center;
+  }
+
+  details {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $light-grayish-blue;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    summary {
+      position: relative;
+      padding: 1rem 0 0;
+      cursor: pointer;
+      outline: none;
+      color: $very-dark-grayish-blue;
+
+      &::-webkit-details-marker {
+        position: absolute;
+        right: 5px;
+        background: url("../images/icon-arrow-down.svg") center no-repeat;
+        color: transparent;
+      }
+
+      &:hover {
+        color: $soft-red;
+      }
+    }
+
+    &[open] summary {
+      color: $dark-blue;
+      font-weight: 700;
+    }
+
+    &[open] summary::-webkit-details-marker {
+      transform: rotate(180deg);
+    }
+
+    p {
+      margin-top: 0.5rem;
+      font-size: 12.5px;
+      line-height: 1.5;
+      color: $dark-grayish-blue;
+    }
+  }
+}
+
+.card {
+  position: relative;
+}
+img {
+  width: 100%;
+}
+.first {
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  // width: 250px;
+  // height: 200px;
+  width: 315px;
+  height: 215px;
+  background: tomato;
+  // margin: -60px auto 0;
+  background: url("../images/bg-pattern-mobile.svg") no-repeat center center /
+    80%;
+}
+
+.second {
+  position: absolute;
+  top: -48%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 315px;
+  height: 215px;
+  background: tomato;
+  // margin: -60px auto 0;
+  background: url("../images/illustration-woman-online-desktop.svg") no-repeat
+    center center / 80%;
+}
+
+.box {
+  position: absolute;
+  top: -33%;
+  left: 5%;
+  width: 140px;
+  height: 140px;
+  background: url("../images/illustration-box-desktop.svg") no-repeat center
+    center / 80%;
+}

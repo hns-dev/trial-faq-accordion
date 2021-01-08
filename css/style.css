@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Kumbh Sans";
+  font-size: 14px;
+  font-weight: 400;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 15px;
+  width: 90%;
+}
+
+.faq-container {
+  padding: 6rem 1.5rem 1rem;
+  margin: 4rem 0 2rem;
+}
+
+.faq-container h1 {
+  margin-bottom: 1.5rem;
+  color: #1d1e35;
+  text-align: center;
+}
+
+.faq-container details {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e7e7e9;
+}
+
+.faq-container details:last-child {
+  border-bottom: none;
+}
+
+.faq-container details summary {
+  position: relative;
+  padding: 1rem 0 0;
+  cursor: pointer;
+  outline: none;
+  color: #4a4b5e;
+}
+
+.faq-container details summary::-webkit-details-marker {
+  position: absolute;
+  right: 5px;
+  background: url("../images/icon-arrow-down.svg") center no-repeat;
+  color: transparent;
+}
+
+.faq-container details summary:hover {
+  color: #f47c57;
+}
+
+.faq-container details[open] summary {
+  color: #1d1e35;
+  font-weight: 700;
+}
+
+.faq-container details[open] summary::-webkit-details-marker {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.faq-container details p {
+  margin-top: 0.5rem;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #787887;
+}
+
+.card {
+  position: relative;
+}
+
+img {
+  width: 100%;
+}
+
+.first {
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 315px;
+  height: 215px;
+  background: tomato;
+  background: url("../images/bg-pattern-mobile.svg") no-repeat center center/80%;
+}
+
+.second {
+  position: absolute;
+  top: -48%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 315px;
+  height: 215px;
+  background: tomato;
+  background: url("../images/illustration-woman-online-desktop.svg") no-repeat center center/80%;
+}
+
+.box {
+  position: absolute;
+  top: -33%;
+  left: 5%;
+  width: 140px;
+  height: 140px;
+  background: url("../images/illustration-box-desktop.svg") no-repeat center center/80%;
+}
+/*# sourceMappingURL=style.css.map */
