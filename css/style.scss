@@ -157,6 +157,9 @@ img {
 
 // Mdia Queries
 @media (min-width: 1000px) {
+  .container {
+    width: 80%;
+  }
   .card {
     padding: 0;
     display: grid;
@@ -168,7 +171,7 @@ img {
     // background-color: #f1f1f1;
     margin: 0;
     // width: 100%;
-    width: 515px;
+    width: 514px;
     height: 100%;
   }
 
@@ -204,7 +207,7 @@ img {
     justify-self: center;
     align-self: center;
     width: 100%;
-    padding-right: 6rem;
+    padding-right: 5rem;
 
     h1 {
       text-align: left;

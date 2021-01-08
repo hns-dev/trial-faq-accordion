@@ -141,6 +141,9 @@ img {
 }
 
 @media (min-width: 1000px) {
+  .container {
+    width: 80%;
+  }
   .card {
     padding: 0;
     display: -ms-grid;
@@ -152,7 +155,7 @@ img {
   }
   .bg-imgs {
     margin: 0;
-    width: 515px;
+    width: 514px;
     height: 100%;
   }
   .bg-imgs-container {
@@ -186,7 +189,7 @@ img {
         -ms-grid-row-align: center;
         align-self: center;
     width: 100%;
-    padding-right: 6rem;
+    padding-right: 5rem;
   }
   .faq-container h1 {
     text-align: left;
