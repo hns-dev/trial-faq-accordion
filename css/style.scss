@@ -24,18 +24,20 @@ body {
   font-family: $font-family;
   font-size: $font-size;
   font-weight: 400;
-  background: linear-gradient($soft-violet, $soft-blue);
+  background: linear-gradient($soft-violet, $soft-blue) no-repeat;
   height: 100vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // overflow: hidden;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  margin: calc(100vh - 75vh) auto;
 }
 
 .container {
   border-radius: 15px;
   width: 90%;
-  margin: calc(100vh - 90vh) auto 0;
+  margin: 0 auto;
+  // margin: calc(100vh - 90vh) auto 0;
 }
 
 .card {
@@ -156,22 +158,45 @@ img {
 }
 
 // Mdia Queries
-@media (min-width: 1000px) {
+@media (min-width: 500px) {
+  .faq-container {
+    padding: 0 2.5rem;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    padding: 4rem 0 0;
+  }
+  .faq-container {
+    padding: 0 4rem;
+  }
+}
+
+@media (min-width: 1050px) {
   .container {
     width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
   }
   .card {
     padding: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 600px;
+    grid-template-rows: minmax(600px, auto);
   }
 
   .bg-imgs {
     // background-color: #f1f1f1;
     margin: 0;
-    // width: 100%;
-    width: 514px;
+    width: 100%;
+    // width: 514px;
     height: 100%;
   }
 
@@ -183,7 +208,10 @@ img {
   .bg-pattern {
     top: 0;
     background: url("../images/bg-pattern-desktop.svg") no-repeat;
-    background-position: left -550px top -250px;
+    // background-position: left -550px top -250px;
+    // background-position: 103% 80%;
+    background-size: 220%;
+    background-position: 109% 69%;
     width: 100%;
     height: 100%;
   }
@@ -191,23 +219,28 @@ img {
   .woman {
     top: 0%;
     background: url("../images/illustration-woman-online-desktop.svg") no-repeat;
-    background-position: left -70px top 80px;
+    // background-position: left -70px top 80px;
+    // background-size: 110%;
+    // background-position: 214% 33%;
+    background-size: 110%;
+    background-position: 210% 41%;
     width: 100%;
     height: 100%;
   }
 
   .box {
-    top: 35%;
+    top: 39.4%;
     left: -20%;
     width: 200px;
     height: 200px;
+    background-size: 100%;
   }
 
   .faq-container {
     justify-self: center;
     align-self: center;
     width: 100%;
-    padding-right: 5rem;
+    padding: 4rem 4rem;
 
     h1 {
       text-align: left;
